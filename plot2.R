@@ -1,8 +1,7 @@
 #EXPLORATORY DATA ANALYSIS
 #COURSE PROJECT 1
+#CREATE PLOT 2
 
-
-setwd("../../4. Exploratory Data Analysis/Assignment1")
 #GETTING THE DATA
 if (!file.exists("data")){
   dir.create("data")

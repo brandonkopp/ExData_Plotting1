@@ -1,7 +1,7 @@
 #EXPLORATORY DATA ANALYSIS
 #COURSE PROJECT 1
+#CREATE PLOT 4
 
-setwd("../../4. Exploratory Data Analysis/Assignment1")
 #GETTING THE DATA
 if (!file.exists("data")){
   dir.create("data")
@@ -27,7 +27,7 @@ with(power, {
   plot(x = DateTime, y = Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
   plot(x = DateTime, y = Voltage, type="l", xlab="datetime", ylab="Voltage")
   plot(x = power$DateTime, y = power$Global_active_power, type="n", xlab="", 
-       ylab="Energy sub-metering", ylim = c(0,38), )
+       ylab="Energy sub-metering", ylim = c(0,38))
   lines(x = power$DateTime, y = power$Sub_metering_1, col="black")
   lines(x = power$DateTime, y = power$Sub_metering_2, col="red")
   lines(x = power$DateTime, y = power$Sub_metering_3, col="blue")
